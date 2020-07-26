@@ -123,7 +123,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   margin-bottom: 6rem;
 }
 
@@ -133,9 +133,9 @@ body {
   font-weight: 400;
   letter-spacing: 3.5rem;
   -webkit-animation-name: moveInLeft;
-          animation-name: moveInLeft;
+  animation-name: moveInLeft;
   -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 .heading-primary--sub {
@@ -144,7 +144,7 @@ body {
   font-weight: 700;
   letter-spacing: 1.4rem;
   -webkit-animation: moveInRight 2s;
-          animation: moveInRight 2s;
+  animation: moveInRight 2s;
 }
 
 .heading-secondary {
@@ -154,6 +154,9 @@ body {
   display: inline-block;
   background: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b485));
   background: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b485));
+  -webkit-background: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   letter-spacing: 0.2rem;
@@ -551,6 +554,7 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b485));
   background: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
