@@ -116,7 +116,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: #777;
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 .heading-primary {
@@ -339,7 +339,6 @@ body {
   width: 100%;
   z-index: -1;
   opacity: .15;
-  overflow: hidden;
 }
 
 .bg-video__content {
