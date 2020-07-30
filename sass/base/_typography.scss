@@ -4,7 +4,9 @@ body {
   font-size: $default-font-size;
   line-height: 1.7;
   color: $color-grey-dark;
-  padding: 2rem;
+
+
+  
 }
 
 
@@ -30,17 +32,37 @@ body {
     animation-name: moveInLeft;
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
+
+
+
+    @include respond(phone) {            
+
+     font-size: 5rem;
+     letter-spacing: 1rem;
+     
+    }
+
+
   }
 
   &--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 1.4rem;
+    letter-spacing: 1.3rem;
 
     -webkit-animation: moveInRight 2s;
 
     animation: moveInRight 2s;
+
+
+    @include respond(phone) {            
+
+      letter-spacing: .3rem;
+      font-weight: 500;
+
+     }
+ 
   }
 
 }
@@ -64,6 +86,25 @@ body {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: .5rem 1rem 2rem rgba($color-black, .3);
   }
+
+
+
+  @include respond(tab-port) {            
+
+    font-size: 2.5rem;
+    
+    
+  }
+
+  @include respond(phone) {            
+
+    font-size: 2rem;
+    
+    
+  }
+
+
+
 
 }
 
